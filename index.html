@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html lang = "sl">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta charset = "UTF-8">
+
+	<title>Restavracija Gradela</title>
+	<meta property = "og:title" content ="Gradela">
+	<meta property = "twitter:title" content ="Gradela">
+
+	<meta name = "description" content = "Gradela">
+	<meta property = "og:description" content = "Gradela">
+	<meta property = "twitter:description" content = "Gradela">
+
+	<meta name = "author" content = "Toshe Stojanov">
+
+	<link rel="shortcut icon" href="slike/favicon.ico">
+	<meta property = "og:image" content = "slike/logo.png">
+
+	<meta property = "og:type" content = "website">
+	<meta property = "twitter:type" content = "website">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Ostale CSS datoteke -->
+	<!-- Plugins.css -->
+	<link rel="stylesheet" href="css/plugins.css">
+
+	<!-- Animate.css https://cdnjs.com/libraries/animate.css/  https://daneden.github.io/animate.css/ -->
+	<!-- Datoteka/knjižnica v kateri so spisane različne CSS animacije-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- END OF CSS FILES -->
+
+	<!-- Google Fonts https://fonts.google.com/ -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <!-- footer css -->
+    <link rel="stylesheet" href="css/footerstyle.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+</head>
+<body data-spy="scroll" data-target = "#body">
+<!----------------------------------------------------NAVBAR-------------------------------------------------------->
+	<div id = "home">
+		<nav class = "navbar solid navbar-expand-lg fixed-top">
+			<div class = "container-fluid">
+				<a href = "#home" class = "navbar-brand"> <img src = "slike/logo.png" alt = "logo">
+				</a>
+				<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navigacija">
+					<span class = "custom-toggler-icon"><i class="fas fa-bars"></i></span>
+				</button>
+				<div class = "collapse navbar-collapse" id = "navigacija">
+					<ul class = "navbar-nav ml-auto">
+						<li class = "nav-item">
+							<a href = "#home" class = "nav-link">Domov</a>
+						</li>
+						<li class = "nav-item">
+							<a href = "#gradela" class = "nav-link">Gradela</a>
+						</li>
+						<li class = "nav-item">
+							<a href = "meni/meni.html" class = "nav-link">Meni</a>
+						</li>
+						<li class = "nav-item">
+							<a href = "#location" class = "nav-link">Lokacija</a>
+						</li>
+                        <li class = "nav-item">
+							<a href = "#contact" class = "nav-link">Kontakt</a>
+						</li>
+                        <li class = "nav-item">
+							<a href = "galerija/galery.html" class = "nav-link">Galerija</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+<!--------------------------------------------------GLAVNI SCROLLER-------------------------------------------------------->
+		<div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="10000">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselIndicators" data-slide-to="0" class="active priamry"></li>
+				<li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active" style="background-image: url('slike/slider/gradela1.jpg')" alt="">
+					<div class = "caption text-center text-light text-uppercase">
+						<h1 class = "font-weight-bold os-animation" data-animation = "bounceInUp" data-delay=".6s">Okusi Življenje v Restavraciji <span class="primary">Gradela</span></h1>
+						<h3 class = "os-animation" data-animation = "bounceInUp" data-delay = ".8s">Preverite našo ponudbo</h3>
+						<a href = "meni/meni.html" class = "btn btn-style1 os-animation" data-animation="bounceInUp" data-delay = "1s">do menija</a>
+					</div>
+				</div>
+				<div class="carousel-item" style="background-image: url('slike/slider/gradela2.jpg')" alt="">
+					<div class = "caption text-center text-light text-uppercase">
+						<h1 class = "font-weight-bold os-animation" data-animation = "bounceInUp" data-delay=".6s">Okusi sveta, servirani z ljubeznijo v <span class="primary">Gradeli</span></h1>
+						<h3 class = "os-animation" data-animation = "bounceInUp" data-delay = ".8s">Preberite naše začetke.</h3>
+						<a href = "#gradela" class = "btn btn-style1 os-animation" data-animation="bounceInUp" data-delay = "1s">O NAS</a>
+					</div>
+				</div>
+                <div class="carousel-item" style="background-image: url('slike/slider/gradela3.jpg')" alt="">
+					<div class = "caption text-center text-light text-uppercase">
+						<h1 class = "font-weight-bold os-animation" data-animation = "bounceInUp" data-delay=".6s">Hitro najdi <span class="primary">Gradelo</span></h1>
+						<h3 class = "os-animation" data-animation = "bounceInUp" data-delay = ".8s">Poglejte našo lokacijo</h3>
+						<a href = "#location" class = "btn btn-style1 os-animation" data-animation="bounceInUp" data-delay = "1s">Lokacija</a>
+					</div>
+				</div>
+				<a href="#carouselIndicators" class="carousel-control-prev"  role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class = "nazaj">Previous</span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a href="#carouselIndicators" class="carousel-control-next"  role="button" data-slide="next">
+					<span class = "naprej">Next</span>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+<!--------------------------------------------------NEKAJ O NAS-------------------------------------------------------->
+		<div id = "gradela" class = "offset" b>
+			<div class = "jumbotron m-0 py-5">
+				<div class="col-12 os-animation" data-animation="fadeInUp">
+					<h3 class="heading">Nekaj o nas.</h3>
+					<div class="heading-underline"></div>
+				</div>
+				<div class = "container">
+					<div class = "row text-center px-lg-4 px-xl-5">
+						<div class = "col-md-4 col-sm-6 os-animation" data-animation="fadeInLeft">
+							<div class = "gradela px-2">
+                                <span class="fa-stack fa-3x">
+									<i class="fas fa-pizza-slice" style="font-size:40px;color:red;"></i>
+								</span>
+								<h3>Gradela</h3>
+								<p class = "lead"> Naša skupna vez so vrednote (odprtost in sodelovanje, ustvarjalnost in podjetnost, skrbnost in odgovornost, znanje in odličnost, vztrajnost in zavzetost), ki jih cenimo, spoštujemo in živimo. Pri svojem delu sledimo smernicam in trendom ki jih pričakujejo naši gostje. Želimo ostati v družbi najboljših.</p>
+							</div>
+						</div>
+						<div class = "col-md-4 col-sm-6 os-animation" data-animation="fadeInUp">
+							<div class = "gradela px-2">
+                                <span class="fa-stack fa-3x">
+									<i class="fas fa-hands-helping" style="font-size:40px;color:red;"></i>
+								</span>
+								<h3>Poslanstvo podjetja</h3>
+								<p class = "lead"> Restavracija in picerija Gardela se zavezujeta ustvarjanju nepozabnih gastronomskih doživetij, kjer se srečujeta tradicija in sodobnost. Naša misija je zadovoljiti širok spekter okusov s svežimi in kakovostnimi sestavinami, ki jih skrbno izbiramo. S svojim edinstvenim vzdušjem želimo biti prostor, kjer se ljudje povežejo ob okusnih jedeh in topli gostoljubnosti. S strastjo do kulinarike si prizadevamo postati sinonim za vrhunsko kulinariko v naši skupnosti.</p>
+							</div>
+						</div>
+						<div class = "col-md-4 col-sm-6 os-animation" data-animation="fadeInRight">
+							<div class = "gradela px-2">
+                                <span class="fa-stack fa-3x">
+									<i class="fas fa-chart-line" style="font-size:40px;color:red;"></i>
+								</span>
+								<h3>Vizija</h3>
+								<p class = "lead">
+                                    Vizija restavracije Gradela za prihodnost je ustvariti edinstveno gastronomsko doživetje, ki presega pričakovanja gostov in postavlja standarde vrhunske kulinarike. S posvečenostjo inovacijam ter spoštovanjem do lokalnih in visokokakovostnih sestavin želi Gradela postati sinonim za vrhunsko kulinariko in gostoljubnost.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--------------------------------------------------KROZNIKI DOBROTE----------------------------------------------------->
+	<div id = "meni" class = "offset">
+				<div class = "jumbotron mb-0" style="background-image: url('slike/back1.jpg')" alt="">
+					<div class = "container py-2">
+						<div class = "os-animation" data-animation = "fadeInUp">
+							<h3 class = "heading-dva">Krožniki dobrote</h3>
+							<div class = "heading-underline"></div>
+						</div>
+						<div class = "row justify-content-center text-center px-lg-4 px-xl-5">
+							<div class = "col-md-6 col-lg-4 os-animation" data-animation="fadeInUp">
+									<div class = "pricing-panel">
+										<div class="pricing-image">
+											<img src="slike/cenik/dobrote1.JPG" alt="">
+										</div>
+										<h3 class = "border-bottom py-2 mx-3">Cheesburger s prilogo</h3>
+										<p class = "lead py-2">
+                                            V restavraciji Gradela uživate v sočnem cheesburgerju, obdanem s svežim mehkim kruhom, sočnimi rezinami govejega mesa, karameliziranimi čebulicami in slastno cheddar omako.</p>
+										<h1 class ="py-3">9.80€</h1>
+										</div>
+									</div>
+								<div class = "col-md-6 col-lg-4 os-animation" data-animation="fadeInUp">
+									<div class = "pricing-panel">
+										<div class="pricing-image">
+											<img src="slike/cenik/dobrote2.JPG" alt="">
+										</div>
+										<h3 class = "border-bottom py-2 mx-3">Svinjska rebra</h3>
+										<p class = "lead py-2">
+                                            Sočna svinjska rebra, popolno pečena do hrustljavega perfekcije, se odlično ujamejo s pikantnim ajvarjem in karamelizirano čebulo, ustvarjajoč nepozabno kombinacijo okusov.</p>
+										<h1 class ="py-3">23€/kg</h1>
+										</div>
+									</div>
+									<div class = "col-md-6 col-lg-4 os-animation" data-animation="fadeInUp">
+										<div class = "pricing-panel">
+											<div class="pricing-image">
+												<img src="slike/cenik/dobrote3.JPG" alt="">
+											</div>
+											<h3 class = "border-bottom py-2 mx-3">Pizza <span class="primary">Sečovlje</span></h3>
+											<p class = "lead py-2">Sečovlje pizza vabi s sočnimi pelati, sirom, kuhanim pršutom, suho salamo, pikantno slamo, gobami, svežo papriko, čebulo in krono v obliki jajca, ustvarjajoč pravo eksplozijo okusov.</p>
+											<h1 class ="py-3">11.50€</h1>
+											</div>
+										</div>
+                        </div>
+				    </div>
+        </div>
+</div>
+
+<!-----------------------------------------------------------KONTAKT-------------------------------------------------------->    
+        		<div id = "contact" class = "offset" b>
+			<div class = "jumbotron m-0 py-5">
+				<div class="col-12 os-animation" data-animation="fadeInUp">
+					<h3 class="heading">Kontakt</h3>
+					<div class="heading-underline"></div>
+				</div>
+				<div class = "container">
+					<div class = "row text-center px-lg-4 px-xl-5">
+						<div class = "col-md-4 col-sm-6 os-animation" data-animation="fadeInLeft">
+							<div class = "gradela px-2">
+                                <span class="fa-stack fa-3x">
+									<i class="fa fa-car" style="font-size:40px;color:red;"></i>
+								</span>
+								<h3>Dostava hrane</h3>
+                                <p class = "lead">
+                                    Uživajte v vrhunski kulinarični izkušnji z dostavo jedi iz restavracije Gradela, kar iz udobja svojega doma.<br> Za naročila pokličite na številko<span class="primary"> 071-450-292</span> in si privoščite odlične jedi, ki bodo razvajale vaše brbončice.</p>
+							</div>
+						</div>
+						<div class = "col-md-4 col-sm-6 os-animation" data-animation="fadeInUp">
+							<div class = "gradela px-2">
+                                <span class="fa-stack fa-3x">
+									<i class="fas fa-phone" style="font-size:40px;color:red;"></i>
+								</span>
+								<h3>Rezervacija</h3>
+                                <p class = "lead">Za zagotovitev prijetnega večera v restavraciji Gradela si rezervirajte svojo mizo že danes. Pokličite na telefonsko številko<span class="primary"> 059-964-182 </span>in ustvarite nepozabno doživetje ob vrhunski kulinariki v prijetnem ambientu.</p>
+							</div>
+						</div>
+						<div class = "col-md-4 col-sm-6 os-animation" data-animation="fadeInRight">
+							<div class = "gradela px-2">
+                                <span class="fa-stack fa-3x">
+									<i class="fas fas fa-mail-bulk" style="font-size:40px;color:red;"></i>
+								</span>
+								<h3>Pohvale/pritožbe</h3>
+                                <p class = "lead">Za vse pohvale, pritožbe ali dodatne informacije nam lahko pišete na naš uradni e-naslov<span class="primary"> kantinagradela@gmail.com</span>.<br>Vaše mnenje je za nas pomembno in se veselimo, da bomo lahko prisluhnili vašim povratnim informacijam ter še izboljšali vašo izkušnjo v restavraciji Gradela.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  
+        
+<!-------------------------------------------------------SLADKA GRADELA----------------------------------------------------------->
+	<div id = "meni" class = "offset">
+				<div class = "jumbotron mb-0" style="background-image: url('slike/back2.jpg')" alt="">
+					<div class = "container py-2">
+						<div class = "os-animation" data-animation = "fadeInUp">
+							<h3 class = "heading-dva">SLADICE</h3>
+							<div class = "heading-underline"></div>
+						</div>
+						<div class = "row justify-content-center text-center px-lg-4 px-xl-5">
+							<div class = "col-md-6 col-lg-4 os-animation" data-animation="fadeInUp">
+									<div class = "pricing-panel">
+										<div class="pricing-image">
+											<img src="slike/cenik/sladice1.jpg" alt="">
+										</div>
+										<h3 class = "border-bottom py-2 mx-3">Čokonutela</h3>
+										<p class = "lead py-2">
+                                            Čokonutelina torta je nežna eksplozija okusov, ki združuje sočnost kokosa, sladkost vaniljeve kreme in hrustljavost biskvita, kar ustvari popolno harmonijo užitka v vsakem grižljaju.</p>
+										<h1 class ="py-3">4.50€</h1>
+								    </div>
+				            </div>
+				            <div class = "col-md-6 col-lg-4 os-animation" data-animation="fadeInUp">
+									<div class = "pricing-panel">
+										<div class="pricing-image">
+											<img src="slike/cenik/sladice2.jpg" alt="">
+										</div>
+										<h3 class = "border-bottom py-2 mx-3">Čokoladni souffle</h3>
+										<p class = "lead py-2">
+                                           Čokoladni soufflé navdušuje s svojo bogato čokoladno noto in mehko, puhasto teksturo, kar ustvarja nepozabno doživetje za sladokusce.</p>
+										<h1 class ="py-3">4.50€</h1>
+								    </div>
+				            </div>
+				            <div class = "col-md-6 col-lg-4 os-animation" data-animation="fadeInUp">
+										<div class = "pricing-panel">
+											<div class="pricing-image">
+												<img src="slike/cenik/sladice3.jpg" alt="">
+											</div>
+											<h3 class = "border-bottom py-2 mx-3">Pistacchio</h3>
+											<p class = "lead py-2">
+                                                Pistachio očara s svojo izrazito aromo pistacij, ki se prepleta z nežno kremo, ustvarjajoč popolno harmonijo okusov v vsaki sočni plasti.</p>
+											<h1 class ="py-3">5.00€</h1>
+								        </div>
+				            </div>
+                        </div>
+				    </div>
+        </div>
+</div>
+        
+
+<!---------------------------------------------------------DOSTAVA----------------------------------------------------->    
+        <div id = "dostava" class = "offset" b>
+			<div class = "jumbotron m-0 py-5">
+				<div class="col-12 os-animation" data-animation="fadeInUp">
+					<h3 class="heading">Dostava</h3>
+					<div class="heading-underline"></div>
+				</div>
+				<div class = "container" >
+						<div class = "div-dva os-animation" data-animation="fadeInUp">
+                                <span class="fa-stack fa-3x">
+									<i class="fas fa-phone" style="font-size:40px;color:red;"></i>
+								</span>
+								<h2 class ="naslov">Informacije o dostavi</h2>
+                                <p class = "lead">
+                                    Uživajte v okusno pripravljeni hrani, ki vam bo hitro in zanesljivo dostavljena na vaš naslov. Naročila za dostavo sprejemamo vsak dan od 12. do 22. ure, s brezplačno dostavo na območju Portoroža, Lucije in Pirana. <br>Za naročila na daljavo (nad 7 km) velja minimalno naročilo v vrednosti 20 €. Za oddaje naročil nas pokličite na telefonsko številko <span class="primary">071-450-292</span>.</p>
+						</div>
+				</div>
+			</div>
+		</div>
+        
+        
+<!-------------------------------------------------------LOKACIJA------------------------------------------------------>
+<div id = "location" class = "offset">
+	<div class = "jumbotron mb-0" style="background-image: url('slike/dostava.jpg')" alt="">
+		<div class = "container py-2">
+			<div class = "os-animation" data-animation = "fadeInUp">
+				<h3 class = "heading-dva">Kje nas najdete.</h3>
+				<div class = "heading-underline"></div>
+			</div>
+			<div class = "row justify-content-center text-center px-lg-4 px-xl-5">
+
+				<div class = "col-md-6 col-lg-4 os-animation">
+				    <div class = "pricing-panel">
+								<div class="pricing-image">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.0767561770404!2d13.593273876276449!3d45.50853347107466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b655e10266ad7%3A0x75d11592c1f797d0!2sGRADELA%2C%20mesna%20kantina!5e0!3m2!1sen!2ssi!4v1700570890125!5m2!1sen!2ssi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+				    </div>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------------------------------------------------FOOTER--------------------------------------------------------->
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>GRADELA</h4>
+  	 			<ul>
+  	 				<li><a href="#gradela">O nas</a></li>
+  	 				<li><a href="meni/meni.html">Meni</a></li>	
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Kontaktirajte nas</h4>
+  	 			<ul>
+  	 				<li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#location">Lokacija</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Dostava</h4>
+  	 			<ul>
+  	 				<li><a href="#dostava">Informacije o dostavi</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Naša socialna omrežja</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com/KantinaGradela"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="https://www.instagram.com/gradelaportoroz"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+        <div class="footer-copyright">
+					<div class="row-dva">
+						<div class="col-sm-12">
+							<p>&copy; copyright. designed and developed by <a href="https://linkedin.com/in/tose-stojanov-1792bb298">Toshe</a>.
+							</p>
+						</div>
+					</div>
+        </div>
+     </div>
+  </footer>
+        
+<!----------------------------------------------------- FINISH LINE --------------------------------------------------------->
+
+						<!-- JS-->
+
+						<!-- jQuery library from CDN: https://code.jquery.com/ -->
+						<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+						integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+						crossorigin="anonymous">
+						</script>
+
+						<!-- Popper JS from CDN -->
+						<!-- Uporablja se v kombinaciji s komponento Modal iz BS - pojavna ("pop-up") okna  -->
+						<!-- V našem projektu tega ne bomo uporabili, dodano je, če bi to kdo naknadno nadgradil projekt in bi mu prišla prav ta knjižnica -->
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+						integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+						crossorigin="anonymous">
+						</script>
+
+						<!-- Bootstrap JS from CDN: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+						integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+						crossorigin="anonymous">
+						</script>
+
+						<!-- Font Awesome: https://fontawesome.com/
+						<!- Za vektorske ikone, logotipe družbenih omrežij -->
+						<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+						<!-- povezavo je bolje dodati drugače: vsak svojo (get your own kit): prednost dodajanja povezave preko "kit-a" je ta, da se z vsako novo verzijo, ta samodejno posodobi - ni nam potrebno dodajat novo povezavo, ko pride ven nova verzija -->
+
+
+
+						<!-- Waypoints: https://cdnjs.com/libraries/waypoints  https://github.com/imakewebthings/waypoints -->
+						<!-- Za zakasnitev animacij, ko se pomikamo navzdol po spletni strani => sprožilec animacij -->
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+						<!-- Lightbox Image Gallery: https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+						<!-- Za galerijo slik v sekciji PORTFOLIO-->
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+
+						<!-- Owl Carousel: https://cdnjs.com/libraries/OwlCarousel2  http://owlcarousel2.github.io/OwlCarousel2/ -->
+						<!-- Za "vrtiljak" oz. "slider" v sekciji TEAM in sekciji CLIENTS-->
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+						<!-- jQuery CounterUp: https://www.jsdelivr.com/package/npm/jquery.counterup  https://github.com/bfintal/Counter-Up2 -->
+						<!-- Za števce številk v sekciji SKILLS-->
+						<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+
+						<!-- Bootstrap Form Validator: https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
+						<!-- Za preverjanje izpolnjevanja obrazca v sekciji CONTACT -->
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+						<script src="js/script.js"></script>
+        
+        
+        
+        
+        
+        
+
+
+</body>
+</html>
